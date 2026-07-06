@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Experience | Akhilesh Yadav</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#eec200",
+                        "inverse-surface": "#dae2fd",
+                        "surface-tint": "#c0c1ff",
+                        "surface-variant": "#2d3449",
+                        "on-primary-container": "#0d0096",
+                        "primary-fixed": "#e1e0ff",
+                        "primary": "#c0c1ff",
+                        "on-secondary-container": "#00311f",
+                        "secondary-container": "#00a572",
+                        "on-surface-variant": "#c7c4d7",
+                        "inverse-primary": "#494bd6",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-error": "#690005",
+                        "on-primary": "#1000a9",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "tertiary-fixed-dim": "#eec200",
+                        "secondary": "#4edea3",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-container-lowest": "#060e20",
+                        "secondary-fixed-dim": "#4edea3",
+                        "background": "#0b1326",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#cea700",
+                        "outline-variant": "#464554",
+                        "on-surface": "#dae2fd",
+                        "inverse-on-surface": "#283044",
+                        "surface-container": "#171f33",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#07006c",
+                        "outline": "#908fa0",
+                        "on-secondary-fixed": "#002113",
+                        "surface-container-highest": "#2d3449",
+                        "on-background": "#dae2fd",
+                        "on-tertiary-container": "#4e3e00",
+                        "surface-container-low": "#131b2e",
+                        "on-tertiary-fixed": "#231b00",
+                        "on-tertiary": "#3c2f00",
+                        "surface-dim": "#0b1326",
+                        "on-secondary": "#003824",
+                        "on-secondary-fixed-variant": "#005236",
+                        "surface-container-high": "#222a3d",
+                        "secondary-fixed": "#6ffbbe",
+                        "primary-container": "#8083ff",
+                        "surface-bright": "#31394d",
+                        "surface": "#0b1326",
+                        "tertiary-fixed": "#ffe083"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "bento-gap": "16px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "code-sm": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "code-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 143, 160, 0.2);
+        }
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #c0c1ff 0%, #4edea3 100%);
+            opacity: 0.3;
+        }
+        @media (min-width: 768px) {
+            .experience-timeline::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- Header / Navigation -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 docked full-width top-0 sticky z-50 h-16">
+    <nav class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+        <div class="text-body-lg font-display font-bold text-on-surface dark:text-on-surface tracking-tight">
+            Akhilesh Yadav
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="index.html">Home</a>
+            <a class="text-primary dark:text-primary border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#">Experience</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="projects.html">Projects</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="index.html#skills">Skills</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="index.html#contact">Contact</a>
+        </div>
+        <a href="resume.pdf" download="Akhilesh_Yadav_Resume.pdf" class="bg-primary text-on-primary-container px-6 py-2 rounded-lg font-label-caps text-label-caps hover:scale-105 transition-transform inline-block text-center">
+            Download CV
+        </a>
+    </nav>
+</header>
+
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+    <div class="relative z-10">
+        <span class="font-label-caps text-label-caps text-secondary mb-4 block uppercase tracking-widest">Career Journey</span>
+        <h1 class="font-headline-lg text-headline-lg md:text-display max-w-3xl mb-6">
+            Building Scalable <span class="text-primary">Architecture</span> Through Experience.
+        </h1>
+        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+            Detailed timeline of my professional tenure as a Software Developer, focusing on high-performance Java ecosystems and enterprise-level system optimization.
+        </p>
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="px-margin-desktop max-w-container-max mx-auto pb-32">
+    <div class="relative experience-timeline pl-8 md:pl-0">
+        <!-- Role 1: Hamsa Soham -->
+        <div class="relative mb-24 md:flex md:justify-between md:items-center">
+            <div class="hidden md:block w-[45%] text-right pr-16">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Feb 2026 – Present</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-2">Patna, India</h3>
+            </div>
+            <div class="absolute left-[-33px] md:left-1/2 md:-translate-x-1/2 top-0 w-4 h-4 bg-primary border-4 border-background rounded-full z-20"></div>
+            <div class="md:w-[45%]">
+                <div class="glass-card p-6 rounded-xl hover:border-primary/50 transition-all duration-300 group">
+                    <div class="md:hidden mb-2">
+                        <span class="font-label-caps text-label-caps text-secondary">Feb 2026 – Present</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Software Developer</h2>
+                    <h3 class="font-body-lg text-primary mb-4">Hamsa Soham Healthcare Pvt. Ltd.</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary mt-1" style="font-size: 18px;">check_circle</span>
+                            <span class="text-on-surface-variant">Spearheaded data processing module redesign, achieving a <strong class="text-secondary">25% improvement</strong> in data processing efficiency for large-scale healthcare datasets.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary mt-1" style="font-size: 18px;">check_circle</span>
+                            <span class="text-on-surface-variant">Developed robust RESTful APIs using Spring Boot to handle sensitive patient records with high security and low latency.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary mt-1" style="font-size: 18px;">check_circle</span>
+                            <span class="text-on-surface-variant">Optimized MySQL query performance by implementing strategic indexing and query caching mechanisms.</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-[10px] border border-primary/20">JAVA</span>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-[10px] border border-primary/20">SPRING BOOT</span>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-[10px] border border-primary/20">MYSQL</span>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-[10px] border border-primary/20">REST API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Role 2: Bytemate IT Services -->
+        <div class="relative mb-24 md:flex md:justify-between md:items-center">
+            <div class="md:w-[45%] order-2 md:order-1">
+                <div class="glass-card p-6 rounded-xl hover:border-secondary/50 transition-all duration-300 group">
+                    <div class="md:hidden mb-2">
+                        <span class="font-label-caps text-label-caps text-secondary">Apr 2025 - Feb 2026 (11 mos)</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Building &amp; Leading</h2>
+                    <h3 class="font-body-lg text-secondary mb-4">Bytemate IT Services</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1" style="font-size: 18px;">verified</span>
+                            <span class="text-on-surface-variant">Leading technical initiatives and building scalable solutions for enterprise clients.</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] border border-secondary/20">LEADERSHIP</span>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] border border-secondary/20">ARCHITECTURE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-[-33px] md:left-1/2 md:-translate-x-1/2 top-0 w-4 h-4 bg-secondary border-4 border-background rounded-full z-20"></div>
+            <div class="hidden md:block w-[45%] order-1 md:order-2 text-left pl-16">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Apr 2025 - Feb 2026</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-2">Remote</h3>
+            </div>
+        </div>
+
+        <!-- Role 3: codetalentX -->
+        <div class="relative mb-24 md:flex md:justify-between md:items-center">
+            <div class="hidden md:block w-[45%] text-right pr-16">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Apr 2025 - Oct 2025</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-2">Noida, India</h3>
+            </div>
+            <div class="absolute left-[-33px] md:left-1/2 md:-translate-x-1/2 top-0 w-4 h-4 bg-primary border-4 border-background rounded-full z-20"></div>
+            <div class="md:w-[45%]">
+                <div class="glass-card p-6 rounded-xl hover:border-primary/50 transition-all duration-300 group">
+                    <div class="md:hidden mb-2">
+                        <span class="font-label-caps text-label-caps text-secondary">Apr 2025 - Oct 2025 (7 mos)</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Software Developer</h2>
+                    <h3 class="font-body-lg text-primary mb-4">codetalentX</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary mt-1" style="font-size: 18px;">check_circle</span>
+                            <span class="text-on-surface-variant">Contributing to core product development and optimizing backend services.</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-[10px] border border-primary/20">JAVA</span>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-caps text-[10px] border border-primary/20">SPRING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Role 4: GirlScript SoC -->
+        <div class="relative mb-24 md:flex md:justify-between md:items-center">
+            <div class="md:w-[45%] order-2 md:order-1">
+                <div class="glass-card p-6 rounded-xl hover:border-secondary/50 transition-all duration-300 group">
+                    <div class="md:hidden mb-2">
+                        <span class="font-label-caps text-label-caps text-secondary">Oct 2024 - Dec 2024 (3 mos)</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Contributor</h2>
+                    <h3 class="font-body-lg text-secondary mb-4">GirlScript Summer of Code</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1" style="font-size: 18px;">verified</span>
+                            <span class="text-on-surface-variant">Contributed to open-source projects and collaborated with global developers.</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] border border-secondary/20">OPEN SOURCE</span>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] border border-secondary/20">GIT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-[-33px] md:left-1/2 md:-translate-x-1/2 top-0 w-4 h-4 bg-secondary border-4 border-background rounded-full z-20"></div>
+            <div class="hidden md:block w-[45%] order-1 md:order-2 text-left pl-16">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Oct 2024 - Dec 2024</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-2">Remote</h3>
+            </div>
+        </div>
+
+        <!-- Role 5: Anudip Foundation -->
+        <div class="relative md:flex md:justify-between md:items-center">
+            <div class="md:w-[45%] order-2 md:order-1">
+                <div class="glass-card p-6 rounded-xl hover:border-secondary/50 transition-all duration-300 group font-body-md text-body-md">
+                    <div class="md:hidden mb-2">
+                        <span class="font-label-caps text-label-caps text-secondary">Mar 2024 - Oct 2024 (8 mos)</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Software Developer Trainee</h2>
+                    <h3 class="font-body-lg text-secondary mb-4">ANUDIP FOUNDATION</h3>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1" style="font-size: 18px;">verified</span>
+                            <span class="text-on-surface-variant">Designed and implemented a Student Management System that increased administrative efficiency by <strong class="text-primary">35%</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1" style="font-size: 18px;">verified</span>
+                            <span class="text-on-surface-variant">Mastered the implementation of ORM frameworks with Hibernate to bridge the gap between Java and relational databases.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-1" style="font-size: 18px;">verified</span>
+                            <span class="text-on-surface-variant">Developed interactive desktop application GUIs using Java Swing during the intensive training program.</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] border border-secondary/20">CORE JAVA</span>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-caps text-[10px] border border-secondary/20">HIBERNATE ORM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-[-33px] md:left-1/2 md:-translate-x-1/2 top-0 w-4 h-4 bg-secondary border-4 border-background rounded-full z-20"></div>
+            <div class="hidden md:block w-[45%] order-1 md:order-2 text-left pl-16">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Mar 2024 - Oct 2024</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface mt-2">Gurugram, India</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="bg-surface-container-low py-24">
+    <div class="px-margin-desktop max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div class="glass-card p-10 rounded-xl text-center">
+                <div class="text-display text-primary mb-2">2+</div>
+                <p class="font-label-caps text-label-caps text-on-surface-variant">Years of Experience</p>
+            </div>
+            <div class="glass-card p-10 rounded-xl text-center">
+                <div class="text-display text-secondary mb-2">15+</div>
+                <p class="font-label-caps text-label-caps text-on-surface-variant">Projects Delivered</p>
+            </div>
+            <div class="glass-card p-10 rounded-xl text-center">
+                <div class="text-display text-tertiary mb-2">100%</div>
+                <p class="font-label-caps text-label-caps text-on-surface-variant">Clean Code Focus</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hire CTA -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto text-center">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="font-headline-lg text-headline-lg mb-8">Interested in working together on your next <span class="text-secondary">technical</span> project?</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="index.html#contact" class="bg-tertiary text-inverse-on-surface px-8 py-4 rounded-xl font-label-caps text-label-caps hover:scale-105 transition-transform text-center">
+                Hire Me
+            </a>
+            <a href="projects.html" class="border border-outline text-on-surface px-8 py-4 rounded-xl font-label-caps text-label-caps hover:bg-surface-variant/20 transition-all text-center">
+                View Projects
+            </a>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full py-gutter px-margin-desktop max-w-container-max mx-auto gap-base">
+        <div class="text-label-caps font-label-caps text-on-surface">
+            © 2024 Akhilesh Yadav | Ayodhya/Gurugram
+        </div>
+        <div class="flex gap-6">
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="https://github.com/AkhileshYadav7007" target="_blank">GitHub</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="https://linkedin.com/in/akhilesh-yadav-java-full-stack" target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="mailto:akhileshyadavji7007@gmail.com">Email</a>
+            <span class="text-on-surface-variant/40 font-label-caps text-label-caps hidden lg:inline">Built with Java &amp; Tailwind</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Micro-interactions for cards
+    const cards = document.querySelectorAll('.glass-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-4px)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Simple scroll reveal
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>

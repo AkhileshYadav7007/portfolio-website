@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Akhilesh Yadav | Java Full Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#eec200",
+                    "inverse-surface": "#dae2fd",
+                    "surface-tint": "#c0c1ff",
+                    "surface-variant": "#2d3449",
+                    "on-primary-container": "#0d0096",
+                    "primary-fixed": "#e1e0ff",
+                    "primary": "#c0c1ff",
+                    "on-secondary-container": "#00311f",
+                    "secondary-container": "#00a572",
+                    "on-surface-variant": "#c7c4d7",
+                    "inverse-primary": "#494bd6",
+                    "error": "#ffb4ab",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-error": "#690005",
+                    "on-primary": "#1000a9",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "tertiary-fixed-dim": "#eec200",
+                    "secondary": "#4edea3",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-container-lowest": "#060e20",
+                    "secondary-fixed-dim": "#4edea3",
+                    "background": "#0b1326",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-container": "#cea700",
+                    "outline-variant": "#464554",
+                    "on-surface": "#dae2fd",
+                    "inverse-on-surface": "#283044",
+                    "surface-container": "#171f33",
+                    "error-container": "#93000a",
+                    "on-primary-fixed": "#07006c",
+                    "outline": "#908fa0",
+                    "on-secondary-fixed": "#002113",
+                    "surface-container-highest": "#2d3449",
+                    "on-background": "#dae2fd",
+                    "on-tertiary-container": "#4e3e00",
+                    "surface-container-low": "#131b2e",
+                    "on-tertiary-fixed": "#231b00",
+                    "on-tertiary": "#3c2f00",
+                    "surface-dim": "#0b1326",
+                    "on-secondary": "#003824",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-container-high": "#222a3d",
+                    "secondary-fixed": "#6ffbbe",
+                    "primary-container": "#8083ff",
+                    "surface-bright": "#31394d",
+                    "surface": "#0b1326",
+                    "tertiary-fixed": "#ffe083"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "margin-desktop": "40px",
+                    "base": "8px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "bento-gap": "16px"
+            },
+            "fontFamily": {
+                    "label-caps": ["JetBrains Mono"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "code-sm": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "code-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(70, 69, 84, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-outline-variant/30 h-16">
+    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+        <div class="text-body-lg font-display font-bold text-on-surface dark:text-on-surface tracking-tight">
+            Akhilesh Yadav
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-primary dark:text-primary border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#">Home</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="experience.html">Experience</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="projects.html">Projects</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="skills.html">Skills</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="#contact">Contact</a>
+        </div>
+        <a href="resume.pdf" download="Akhilesh_Yadav_Resume.pdf" class="bg-primary text-on-primary-container px-6 py-2 rounded-lg font-label-caps text-label-caps hover:scale-105 transition-transform inline-block text-center">
+            Download CV
+        </a>
+    </div>
+</nav>
+
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center pt-24 pb-12 px-margin-mobile md:px-margin-desktop overflow-hidden">
+    <div class="relative z-10 text-center max-w-4xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 border border-secondary/30 mb-8">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            <span class="font-label-caps text-label-caps text-secondary">Available for new opportunities</span>
+        </div>
+        <h1 class="font-display text-headline-lg-mobile md:text-display text-on-surface mb-6">
+            Akhilesh Yadav — Building <span class="text-primary">Scalable</span> Full-Stack Solutions.
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+            Java Full Stack Developer specialized in Spring Boot, React, and MySQL. Engineering precise, reliable systems from Ayodhya/Gurugram.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a class="w-full sm:w-auto bg-tertiary text-on-tertiary px-8 py-4 rounded font-label-caps text-label-caps hover:brightness-110 transition-all text-center" href="#contact">
+                Hire Me
+            </a>
+            <a class="w-full sm:w-auto border border-secondary text-secondary px-8 py-4 rounded font-label-caps text-label-caps hover:bg-secondary/10 transition-all text-center" href="#projects">
+                View Projects
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Marquee -->
+<section class="py-12 border-y border-outline-variant/20 bg-surface-container-low overflow-hidden" id="skills">
+    <div class="animate-marquee gap-12 flex items-center">
+        <div class="flex items-center gap-12 whitespace-nowrap">
+            <span class="font-label-caps text-headline-md text-outline">JAVA</span>
+            <span class="material-symbols-outlined text-primary">terminal</span>
+            <span class="font-label-caps text-headline-md text-outline">SPRING BOOT</span>
+            <span class="material-symbols-outlined text-secondary">database</span>
+            <span class="font-label-caps text-headline-md text-outline">REACT.JS</span>
+            <span class="material-symbols-outlined text-tertiary">code</span>
+            <span class="font-label-caps text-headline-md text-outline">MYSQL</span>
+            <span class="material-symbols-outlined text-primary">cloud</span>
+            <span class="font-label-caps text-headline-md text-outline">DOCKER</span>
+            <span class="material-symbols-outlined text-secondary">architecture</span>
+            <span class="font-label-caps text-headline-md text-outline">AWS</span>
+        </div>
+        <!-- Duplicate for seamless scroll -->
+        <div class="flex items-center gap-12 whitespace-nowrap">
+            <span class="font-label-caps text-headline-md text-outline">JAVA</span>
+            <span class="material-symbols-outlined text-primary">terminal</span>
+            <span class="font-label-caps text-headline-md text-outline">SPRING BOOT</span>
+            <span class="material-symbols-outlined text-secondary">database</span>
+            <span class="font-label-caps text-headline-md text-outline">REACT.JS</span>
+            <span class="material-symbols-outlined text-tertiary">code</span>
+            <span class="font-label-caps text-headline-md text-outline">MYSQL</span>
+            <span class="material-symbols-outlined text-primary">cloud</span>
+            <span class="font-label-caps text-headline-md text-outline">DOCKER</span>
+            <span class="material-symbols-outlined text-secondary">architecture</span>
+            <span class="font-label-caps text-headline-md text-outline">AWS</span>
+        </div>
+    </div>
+</section>
+
+<!-- Strengths Bento Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <div class="flex flex-col mb-16">
+        <span class="font-label-caps text-label-caps text-primary mb-2">ARCHITECTURAL FOCUS</span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface">Core Competencies</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap">
+        <!-- Large Card: Backend -->
+        <div class="md:col-span-8 glass-card p-8 rounded-xl flex flex-col justify-between group hover:border-primary/50 transition-all">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings_input_component</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md">Robust Backend Engineering</h3>
+                </div>
+                <p class="text-on-surface-variant mb-6 text-body-lg">
+                    Architecting microservices with Java and Spring Boot. I focus on building high-concurrency APIs, distributed systems, and secure authentication flows that scale with your business growth.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-surface-variant/40 px-3 py-1 rounded text-code-sm font-label-caps text-primary">Spring Security</span>
+                <span class="bg-surface-variant/40 px-3 py-1 rounded text-code-sm font-label-caps text-primary">JPA/Hibernate</span>
+                <span class="bg-surface-variant/40 px-3 py-1 rounded text-code-sm font-label-caps text-primary">REST APIs</span>
+            </div>
+        </div>
+        <!-- Small Card: Quick Stats -->
+        <div class="md:col-span-4 glass-card p-8 rounded-xl flex flex-col justify-center text-center bg-primary-container/10">
+            <span class="text-display font-display text-primary leading-none mb-2">3+</span>
+            <span class="font-label-caps text-label-caps text-on-surface-variant">YEARS OF SYSTEM DESIGN</span>
+        </div>
+        <!-- Medium Card: Frontend -->
+        <div class="md:col-span-6 glass-card p-8 rounded-xl hover:border-secondary/50 transition-all">
+            <div class="w-12 h-12 rounded bg-secondary/10 flex items-center justify-center text-secondary mb-6">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">layers</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-4">Responsive Frontend</h3>
+            <p class="text-on-surface-variant text-body-md mb-6">
+                Crafting intuitive user interfaces using React.js and Tailwind CSS. Bridging the gap between design and functionality with state-of-the-art state management.
+            </p>
+            <div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden">
+                <div class="h-full bg-secondary w-[90%]"></div>
+            </div>
+        </div>
+        <!-- Medium Card: Cloud/DevOps -->
+        <div class="md:col-span-6 glass-card p-8 rounded-xl hover:border-tertiary/50 transition-all">
+            <div class="w-12 h-12 rounded bg-tertiary/10 flex items-center justify-center text-tertiary mb-6">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">cloud_queue</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-4">Cloud &amp; Automation</h3>
+            <p class="text-on-surface-variant text-body-md mb-6">
+                Deployment strategies using AWS and Docker. Implementing CI/CD pipelines to ensure continuous delivery with minimal downtime and maximum efficiency.
+            </p>
+            <div class="flex items-center gap-4 text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary">check_circle</span>
+                <span class="font-label-caps text-label-caps">Dockerized Environments</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Work Preview -->
+<section class="py-24 bg-surface-container-lowest" id="projects">
+    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+                <span class="font-label-caps text-label-caps text-secondary mb-2">PORTFOLIO</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">Recent Projects</h2>
+            </div>
+            <a class="group flex items-center gap-2 text-primary font-label-caps text-label-caps" href="projects.html">
+                EXPLORE ALL WORK 
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Project 1 -->
+            <div class="group">
+                <div class="aspect-video w-full rounded-xl overflow-hidden mb-6 relative glass-card">
+                    <img alt="Cloud Management System Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkpreHCB-mxHozNp15_zrIJ8gxouQmRV4tOT1bQ4qOU8grJf8PGphEf6BjrkmO-b1n0CpYXI95MzVy0VpPzx0zBxoRWshdeJoyX9tBgMuHpFGHvGn0g9HPCOewDpi1UP_h67QPfP42ksAhVGE957yHJGyHMz2ZpYEwp6mFpkaRShtdOFxt1_ZmMblYq0dApiulR9AYDm_rHfJySG7vED_uUzrRGLmEGV3tJYLIdfLCooBPkruWIc4nI6ztIH6hOEbdMxubHGTuaH0T"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-2">E-Commerce Orchestrator</h3>
+                        <p class="text-on-surface-variant mb-4">Spring Boot microservices architecture for real-time inventory management.</p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-surface-variant rounded text-code-sm font-label-caps text-on-surface-variant">JAVA</span>
+                            <span class="px-2 py-1 bg-surface-variant rounded text-code-sm font-label-caps text-on-surface-variant">MYSQL</span>
+                            <span class="px-2 py-1 bg-surface-variant rounded text-code-sm font-label-caps text-on-surface-variant">REDIS</span>
+                        </div>
+                    </div>
+                    <a class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary transition-all" href="projects.html">
+                        <span class="material-symbols-outlined">launch</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="group">
+                <div class="aspect-video w-full rounded-xl overflow-hidden mb-6 relative glass-card">
+                    <img alt="API Gateway Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtKMGulTySCo0hUsMkWsXtzLlWmH72IZppkCMar_geGXjDQNdPzlq105_rIzvpjoew2ZWvPW0kyT_cKfhqW3d2k4UFz9Krpz3GFYr1S10sQlAuAC_IxGIzs6jfHadivPu5LsyMfiB382n4fV6ffPjmRAvDxWJ67r8u0WZE44V1QF9-T3nYJ-tqthZdhHtWORDwPg1aEqU7eyk5KwlGtBlWp5ziYTkIuMSlRjmuI0OlsypRTLmT811Vj_pEapm-Lln5pyJQOSGHn6X9"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-headline-md text-headline-md text-on-surface mb-2">FinTech Core Engine</h3>
+                        <p class="text-on-surface-variant mb-4">Secure transaction processing system with multi-layer encryption.</p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-surface-variant rounded text-code-sm font-label-caps text-on-surface-variant">REACT</span>
+                            <span class="px-2 py-1 bg-surface-variant rounded text-code-sm font-label-caps text-on-surface-variant">SPRING SECURITY</span>
+                            <span class="px-2 py-1 bg-surface-variant rounded text-code-sm font-label-caps text-on-surface-variant">AWS</span>
+                        </div>
+                    </div>
+                    <a class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary transition-all" href="projects.html">
+                        <span class="material-symbols-outlined">launch</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop" id="contact">
+    <div class="max-w-4xl mx-auto glass-card p-10 md:p-16 rounded-3xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32"></div>
+        <div class="relative z-10 grid md:grid-cols-2 gap-12">
+            <div>
+                <span class="font-label-caps text-label-caps text-tertiary mb-4 block">GET IN TOUCH</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Let's build something extraordinary.</h2>
+                <p class="text-on-surface-variant mb-10 text-body-lg">
+                    Ready to take your product to the next level? I'm open to full-stack opportunities and technical collaborations.
+                </p>
+                <div class="space-y-6">
+                    <a class="flex items-center gap-4 group" href="mailto:akhileshyadavji7007@gmail.com">
+                        <div class="w-10 h-10 rounded bg-surface-variant/50 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <span class="text-body-md">akhileshyadavji7007@gmail.com</span>
+                    </a>
+                    <a class="flex items-center gap-4 group" href="tel:+917007976393">
+                        <div class="w-10 h-10 rounded bg-surface-variant/50 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <span class="text-body-md">+91-7007976393</span>
+                    </a>
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-10 h-10 rounded bg-surface-variant/50 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <span class="text-body-md">Ayodhya / Gurugram, India</span>
+                    </div>
+                </div>
+            </div>
+            <form class="space-y-4" action="https://formspree.io/f/your-id" method="POST">
+                <div class="space-y-2">
+                    <label class="font-label-caps text-label-caps text-on-surface-variant ml-1">NAME</label>
+                    <input name="name" class="w-full bg-surface-container-highest border-outline-variant/30 rounded focus:ring-2 focus:ring-primary focus:border-transparent transition-all py-3 px-4 text-on-surface" placeholder="John Doe" type="text" required/>
+                </div>
+                <div class="space-y-2">
+                    <label class="font-label-caps text-label-caps text-on-surface-variant ml-1">EMAIL</label>
+                    <input name="email" class="w-full bg-surface-container-highest border-outline-variant/30 rounded focus:ring-2 focus:ring-primary focus:border-transparent transition-all py-3 px-4 text-on-surface" placeholder="john@example.com" type="email" required/>
+                </div>
+                <div class="space-y-2">
+                    <label class="font-label-caps text-label-caps text-on-surface-variant ml-1">MESSAGE</label>
+                    <textarea name="message" class="w-full bg-surface-container-highest border-outline-variant/30 rounded focus:ring-2 focus:ring-primary focus:border-transparent transition-all py-3 px-4 text-on-surface" placeholder="How can I help you?" rows="4" required></textarea>
+                </div>
+                <button class="w-full bg-primary text-on-primary-container font-label-caps text-label-caps py-4 rounded hover:brightness-110 transition-all active:scale-[0.98]" type="submit">
+                    SEND MESSAGE
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full py-gutter px-margin-desktop max-w-container-max mx-auto gap-base">
+        <div class="text-label-caps font-label-caps text-on-surface">
+            AKHILESH YADAV
+        </div>
+        <div class="text-on-surface-variant dark:text-on-surface-variant text-body-md text-center">
+            © 2024 Akhilesh Yadav | Ayodhya/Gurugram
+        </div>
+        <div class="flex gap-6">
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="https://github.com/AkhileshYadav7007" target="_blank">GitHub</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="https://linkedin.com/in/akhilesh-yadav-java-full-stack" target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="#">Built with Java &amp; Tailwind</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetEl = document.querySelector(this.getAttribute('href'));
+            if (targetEl) {
+                targetEl.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Intersection observer for fade-in animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>

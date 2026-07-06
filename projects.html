@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Projects | Akhilesh Yadav - Java Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#eec200",
+                    "inverse-surface": "#dae2fd",
+                    "surface-tint": "#c0c1ff",
+                    "surface-variant": "#2d3449",
+                    "on-primary-container": "#0d0096",
+                    "primary-fixed": "#e1e0ff",
+                    "primary": "#c0c1ff",
+                    "on-secondary-container": "#00311f",
+                    "secondary-container": "#00a572",
+                    "on-surface-variant": "#c7c4d7",
+                    "inverse-primary": "#494bd6",
+                    "error": "#ffb4ab",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-error": "#690005",
+                    "on-primary": "#1000a9",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "tertiary-fixed-dim": "#eec200",
+                    "secondary": "#4edea3",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "surface-container-lowest": "#060e20",
+                    "secondary-fixed-dim": "#4edea3",
+                    "background": "#0b1326",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-container": "#cea700",
+                    "outline-variant": "#464554",
+                    "on-surface": "#dae2fd",
+                    "inverse-on-surface": "#283044",
+                    "surface-container": "#171f33",
+                    "error-container": "#93000a",
+                    "on-primary-fixed": "#07006c",
+                    "outline": "#908fa0",
+                    "on-secondary-fixed": "#002113",
+                    "surface-container-highest": "#2d3449",
+                    "on-background": "#dae2fd",
+                    "on-tertiary-container": "#4e3e00",
+                    "surface-container-low": "#131b2e",
+                    "on-tertiary-fixed": "#231b00",
+                    "on-tertiary": "#3c2f00",
+                    "surface-dim": "#0b1326",
+                    "on-secondary": "#003824",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-container-high": "#222a3d",
+                    "secondary-fixed": "#6ffbbe",
+                    "primary-container": "#8083ff",
+                    "surface-bright": "#31394d",
+                    "surface": "#0b1326",
+                    "tertiary-fixed": "#ffe083"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "margin-desktop": "40px",
+                    "base": "8px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "bento-gap": "16px"
+            },
+            "fontFamily": {
+                    "label-caps": ["JetBrains Mono"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "code-sm": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "code-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 143, 160, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(192, 193, 255, 0.5);
+            transform: translateY(-4px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .skill-chip {
+            background: rgba(73, 75, 214, 0.1);
+            border: 1px solid rgba(73, 75, 214, 0.3);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 h-16">
+    <div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-full">
+        <div class="text-body-lg font-display font-bold text-on-surface dark:text-on-surface tracking-tight">
+            Akhilesh Yadav
+        </div>
+        <div class="hidden md:flex gap-gutter items-center gap-8">
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="index.html">Home</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="experience.html">Experience</a>
+            <a class="text-primary dark:text-primary border-b-2 border-primary pb-1 font-label-caps text-label-caps" href="#">Projects</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="skills.html">Skills</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps" href="index.html#contact">Contact</a>
+        </div>
+        <a href="resume.pdf" download="Akhilesh_Yadav_Resume.pdf" class="bg-primary text-on-primary px-6 py-2 rounded font-label-caps text-label-caps hover:bg-primary-container transition-all active:scale-95 inline-block text-center text-on-primary-container">
+            Download CV
+        </a>
+    </div>
+</nav>
+
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+    <!-- Hero Section -->
+    <header class="mb-16 mt-8">
+        <h1 class="font-display text-display text-on-surface mb-4">Engineering Portfolio</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            A selection of high-performance Java full-stack applications, AI integrations, and professional platforms built with architectural integrity.
+        </p>
+    </header>
+
+    <!-- Projects Grid (Bento Style) -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap mb-24">
+        <!-- Path2Ecom.in (Large Featured Card) -->
+        <div class="md:col-span-8 glass-card rounded-xl overflow-hidden flex flex-col">
+            <div class="relative h-64 md:h-80 overflow-hidden">
+                <img alt="Path2Ecom Project Thumbnail" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Ja3UkBzsJRo9njt5JoPMs_tFyKe5U-zGAWHB9gIO0vTjnlM-kiukQA9zAc83zWyVBYqkTHpsVuYhiyhYVs_R-Or1b4XTGOryH9jZ7lvj4HUpmEgt988YIAdFtMQHnFbjZFxdr1Hl7NjMMrVg7sxBd2Redmiqz451ElEz_KeP68RUnU8ZtIzRtbDXhgwk-LyYm4DVq4XOkvChaGl6EbU5r22c4CFtUbWWtK3WjNBhCgITOlZ4m8dVcLNuuWa2PEoP2fL-Hqa5e0Eb"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+            </div>
+            <div class="p-gutter flex-1 flex flex-col p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <span class="font-label-caps text-label-caps text-secondary mb-2 block">FREELANCE CLIENT WORK</span>
+                        <h2 class="font-headline-md text-headline-md text-on-surface">Path2Ecom.in</h2>
+                    </div>
+                    <a class="p-2 glass-card rounded-full hover:bg-primary/20 transition-all" href="https://Path2Ecom.in" target="_blank">
+                        <span class="material-symbols-outlined text-primary">open_in_new</span>
+                    </a>
+                </div>
+                <p class="text-on-surface-variant mb-6 flex-1 text-body-md">
+                    A comprehensive e-commerce training platform designed for scalability and security. Features a robust REST API backend for managing educational content and seamless payment integration via Razorpay.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">SPRING BOOT</span>
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">REACT</span>
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">MYSQL</span>
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">RAZORPAY</span>
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">VPS</span>
+                </div>
+                <div class="border-t border-outline-variant/20 pt-6 grid grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">security</span>
+                        <span class="font-label-caps text-[10px] text-on-surface-variant">SECURE REST APIs</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">cloud_upload</span>
+                        <span class="font-label-caps text-[10px] text-on-surface-variant">VPS DEPLOYMENT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI-Research Assistant -->
+        <div class="md:col-span-4 glass-card rounded-xl overflow-hidden flex flex-col">
+            <div class="relative h-48 overflow-hidden bg-surface-container-high flex items-center justify-center">
+                <div class="absolute inset-0 opacity-20 bg-gradient-to-tr from-primary to-secondary"></div>
+                <span class="material-symbols-outlined text-[64px] text-primary relative z-10" style="font-variation-settings: 'FILL' 1;">neurology</span>
+            </div>
+            <div class="p-gutter flex-1 flex flex-col p-6">
+                <span class="font-label-caps text-label-caps text-tertiary mb-2 block">CHROME EXTENSION</span>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-4">AI-Research Assistant</h2>
+                <p class="text-on-surface-variant mb-6 text-sm">
+                    Leveraging Google's Gemini API to provide real-time web page summarization and intelligent insight extraction directly in the browser.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-auto">
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">JAVASCRIPT</span>
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">GEMINI API</span>
+                    <span class="skill-chip px-3 py-1 rounded-full font-label-caps text-[10px] text-primary">SPRING BOOT</span>
+                </div>
+                <div class="mt-8">
+                    <a href="https://github.com/AkhileshYadav7007/AI-Powered-Research-Assistant" target="_blank" class="w-full py-3 glass-card hover:bg-primary hover:text-on-primary-container transition-all rounded font-label-caps text-label-caps flex items-center justify-center gap-2">
+                        VIEW SOURCE <span class="material-symbols-outlined text-sm">code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Minor Stats / Micro Card -->
+        <div class="md:col-span-4 glass-card rounded-xl p-gutter p-6 flex flex-col justify-center items-center text-center">
+            <span class="material-symbols-outlined text-secondary text-[48px] mb-2">code_blocks</span>
+            <div class="font-display text-[40px] font-bold text-on-surface">15+</div>
+            <div class="font-label-caps text-label-caps text-on-surface-variant">REPOS ON GITHUB</div>
+        </div>
+
+        <!-- Technical Mentality Card -->
+        <div class="md:col-span-8 glass-card rounded-xl p-gutter p-6 bg-gradient-to-br from-surface-container-low to-surface-container">
+            <div class="flex flex-col md:flex-row gap-gutter items-center h-full">
+                <div class="flex-1">
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-2 italic">"Clean Architecture First"</h3>
+                    <p class="text-on-surface-variant">
+                        I prioritize reliability and maintainability. Every project is built with the understanding that software is an evolving organism, requiring structured design patterns and rigorous testing.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 w-full md:w-auto">
+                    <div class="bg-surface-container-highest p-4 rounded text-center">
+                        <div class="text-secondary font-bold text-xl">99.9%</div>
+                        <div class="text-[10px] font-label-caps opacity-60">UPTIME GOAL</div>
+                    </div>
+                    <div class="bg-surface-container-highest p-4 rounded text-center">
+                        <div class="text-primary font-bold text-xl">REST</div>
+                        <div class="text-[10px] font-label-caps opacity-60">STANDARDS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="mb-24">
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="font-display text-headline-lg text-on-surface">Certifications</h2>
+            <div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-bento-gap">
+            <!-- Cert 1 -->
+            <div class="glass-card p-gutter p-6 rounded-xl flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                </div>
+                <h3 class="font-label-caps text-label-caps text-on-surface mb-1">Software Engineer</h3>
+                <p class="text-[10px] text-on-surface-variant font-label-caps opacity-70">HACKERRANK</p>
+            </div>
+            <!-- Cert 2 -->
+            <div class="glass-card p-gutter p-6 rounded-xl flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                </div>
+                <h3 class="font-label-caps text-label-caps text-on-surface mb-1">React (Basic)</h3>
+                <p class="text-[10px] text-on-surface-variant font-label-caps opacity-70">HACKERRANK</p>
+            </div>
+            <!-- Cert 3 -->
+            <div class="glass-card p-gutter p-6 rounded-xl flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-tertiary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                </div>
+                <h3 class="font-label-caps text-label-caps text-on-surface mb-1">JavaScript (Inter.)</h3>
+                <p class="text-[10px] text-on-surface-variant font-label-caps opacity-70">HACKERRANK</p>
+            </div>
+            <!-- Cert 4 -->
+            <div class="glass-card p-gutter p-6 rounded-xl flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                </div>
+                <h3 class="font-label-caps text-label-caps text-on-surface mb-1">SQL (Advanced)</h3>
+                <p class="text-[10px] text-on-surface-variant font-label-caps opacity-70">HACKERRANK</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="glass-card p-margin-desktop p-10 rounded-2xl text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none"></div>
+        <h2 class="font-display text-headline-lg text-on-surface mb-4 relative z-10">Have a technical challenge?</h2>
+        <p class="text-on-surface-variant mb-8 max-w-xl mx-auto relative z-10">
+            I'm currently open to freelance opportunities and full-stack engineering roles. Let's discuss your next architectural milestone.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+            <a href="index.html#contact" class="bg-tertiary text-on-tertiary px-8 py-4 rounded font-label-caps text-label-caps hover:brightness-110 transition-all shadow-lg shadow-tertiary/20 text-center">
+                HIRE ME
+            </a>
+            <a href="index.html#contact" class="glass-card px-8 py-4 rounded font-label-caps text-label-caps hover:bg-surface-container-highest transition-all text-center">
+                GET IN TOUCH
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="full-width bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 mt-24">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full py-gutter px-margin-desktop max-w-container-max mx-auto gap-base">
+        <div class="text-label-caps font-label-caps text-on-surface">
+            © 2024 Akhilesh Yadav | Ayodhya/Gurugram
+        </div>
+        <div class="flex flex-wrap justify-center gap-gutter gap-6">
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="https://github.com/AkhileshYadav7007" target="_blank">GitHub</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="https://linkedin.com/in/akhilesh-yadav-java-full-stack" target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-tertiary transition-colors font-label-caps text-label-caps" href="mailto:akhileshyadavji7007@gmail.com">Email</a>
+            <span class="text-secondary font-bold font-label-caps text-label-caps">Built with Java &amp; Tailwind</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Micro-interaction for cards (move effect)
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+</script>
+</body>
+</html>
